@@ -17,7 +17,6 @@ C:\Users\Informatica\Desktop\Demointerfaz-forms\obj\Debug\DemoInterfaz.FormMedia
 C:\Users\Informatica\Desktop\Demointerfaz-forms\obj\Debug\DemoInterfaz.FormTransmicion.resources
 C:\Users\Informatica\Desktop\Demointerfaz-forms\obj\Debug\DemoInterfaz.MainForm.resources
 C:\Users\Informatica\Desktop\Demointerfaz-forms\obj\Debug\DemoInterfaz.FormOverlay.resources
-C:\Users\Informatica\Desktop\Demointerfaz-forms\obj\Debug\DemoInterfaz.FormGPS.resources
 C:\Users\Informatica\Desktop\Demointerfaz-forms\obj\Debug\DemoInterfaz.Properties.Resources.resources
 C:\Users\Informatica\Desktop\Demointerfaz-forms\obj\Debug\DemoInterfaz.csproj.GenerateResource.cache
 C:\Users\Informatica\Desktop\Demointerfaz-forms\obj\Debug\DemoInterfaz.csproj.CoreCompileInputs.cache
@@ -27,3 +26,4 @@ C:\Users\Informatica\Desktop\Demointerfaz-forms\bin\Debug\DemoInterfaz.exe.confi
 C:\Users\Informatica\Desktop\Demointerfaz-forms\bin\Debug\DemoInterfaz.exe
 C:\Users\Informatica\Desktop\Demointerfaz-forms\bin\Debug\DemoInterfaz.pdb
 C:\Users\Informatica\Desktop\Demointerfaz-forms\obj\Debug\DemoInterfaz.csproj.CopyComplete
+C:\Users\Informatica\Desktop\Demointerfaz-forms\obj\Debug\DemoInterfaz.FormIP.resources
