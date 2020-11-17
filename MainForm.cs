@@ -25,7 +25,6 @@ namespace DemoInterfaz
         private void button2_Click(object sender, EventArgs e)
         {
             openChildForm(new FormMedia());
-
         }
 
 
@@ -52,7 +51,7 @@ namespace DemoInterfaz
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            openChildForm(new FormIP());
+            openChildForm(new FormIp());
         }
     }
 }
