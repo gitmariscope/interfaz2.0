@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace DemoInterfaz
 {
-    public partial class FormIP : Form
+    public partial class FormIp : Form
     {
-        public FormIP()
+        public FormIp()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
