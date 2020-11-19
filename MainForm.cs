@@ -53,5 +53,12 @@ namespace DemoInterfaz
         {
             openChildForm(new FormIp());
         }
+
+        
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
