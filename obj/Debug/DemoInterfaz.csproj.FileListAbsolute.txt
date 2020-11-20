@@ -27,3 +27,4 @@ C:\Users\Informatica\Desktop\Demointerfaz-forms\bin\Debug\DemoInterfaz.pdb
 C:\Users\Informatica\Desktop\Demointerfaz-forms\obj\Debug\DemoInterfaz.csproj.CopyComplete
 C:\Users\Informatica\Desktop\Demointerfaz-forms\obj\Debug\DemoInterfaz.FormOverlay.resources
 C:\Users\Informatica\Desktop\Demointerfaz-forms\obj\Debug\DemoInterfaz.FormIp.resources
+C:\Users\Informatica\Desktop\Demointerfaz-forms\bin\Debug\IPAddressControlLib.dll
