@@ -59,5 +59,17 @@ namespace DemoInterfaz
         {
             Application.Exit();
         }
+
+        private void horafecha_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToLongTimeString();
+            lblFecha.Text = DateTime.Now.ToShortDateString();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            //this.MaximumSize = SystemInformation.PrimaryMonitorMaximizedWindowSize;
+            //this.WindowState = FormWindowState.Maximized;
+        }
     }
 }

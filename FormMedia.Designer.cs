@@ -130,9 +130,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(10, 136);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 18);
+            this.label3.Size = new System.Drawing.Size(60, 18);
             this.label3.TabIndex = 49;
-            this.label3.Text = "Contraste";
+            this.label3.Text = "Contrast";
             // 
             // bunifuSlider2
             // 
@@ -162,9 +162,9 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(10, 204);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 18);
+            this.label5.Size = new System.Drawing.Size(71, 18);
             this.label5.TabIndex = 52;
-            this.label5.Text = "Brillo";
+            this.label5.Text = "Brightness";
             // 
             // bunifuSlider3
             // 
