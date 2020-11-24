@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
 
 namespace DemoInterfaz
 {
@@ -15,6 +16,17 @@ namespace DemoInterfaz
         public MainForm()
         {
             InitializeComponent();
+
+            string ip_server = "http://192.168.2.252";
+            string user = "root";
+            string password = "admin";
+
+            string url = "/axis-cgi/mjpg/video.cgi";
+            string urlDef = ip_server + url;
+
+            AMC.MediaURL = urlDef;
+            AMC.MediaType = "MJPEG";
+            AMC.Play();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -68,8 +80,12 @@ namespace DemoInterfaz
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            //this.MaximumSize = SystemInformation.PrimaryMonitorMaximizedWindowSize;
-            //this.WindowState = FormWindowState.Maximized;
+            
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            AMC.FullScreen = true;
         }
     }
 }

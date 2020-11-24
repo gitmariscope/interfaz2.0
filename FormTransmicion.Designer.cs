@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuSlider1 = new Bunifu.Framework.UI.BunifuSlider();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbxResolution = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,6 +47,8 @@
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -63,20 +64,6 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // bunifuSlider1
-            // 
-            this.bunifuSlider1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSlider1.BackgroudColor = System.Drawing.Color.DarkGray;
-            this.bunifuSlider1.BorderRadius = 0;
-            this.bunifuSlider1.IndicatorColor = System.Drawing.Color.Maroon;
-            this.bunifuSlider1.Location = new System.Drawing.Point(15, 146);
-            this.bunifuSlider1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuSlider1.MaximumValue = 100;
-            this.bunifuSlider1.Name = "bunifuSlider1";
-            this.bunifuSlider1.Size = new System.Drawing.Size(240, 30);
-            this.bunifuSlider1.TabIndex = 6;
-            this.bunifuSlider1.Value = 0;
-            // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -91,13 +78,13 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Compression";
             // 
-            // comboBox1
+            // cbxResolution
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbxResolution.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.cbxResolution.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxResolution.FormattingEnabled = true;
+            this.cbxResolution.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.cbxResolution.Items.AddRange(new object[] {
             "1400x1050",
             "1280x960",
             "1024x768",
@@ -114,11 +101,11 @@
             "640x360",
             "320x180",
             "160x90"});
-            this.comboBox1.Location = new System.Drawing.Point(15, 79);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.comboBox1.Size = new System.Drawing.Size(215, 21);
-            this.comboBox1.TabIndex = 8;
+            this.cbxResolution.Location = new System.Drawing.Point(15, 79);
+            this.cbxResolution.Name = "cbxResolution";
+            this.cbxResolution.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cbxResolution.Size = new System.Drawing.Size(215, 21);
+            this.cbxResolution.TabIndex = 8;
             // 
             // label3
             // 
@@ -197,9 +184,9 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Location = new System.Drawing.Point(2, 225);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(130, 18);
+            this.label7.Size = new System.Drawing.Size(103, 18);
             this.label7.TabIndex = 15;
-            this.label7.Text = "Codificacion H.264:";
+            this.label7.Text = "Encoder H.264:";
             // 
             // label8
             // 
@@ -332,6 +319,15 @@
             this.textBox2.Size = new System.Drawing.Size(65, 20);
             this.textBox2.TabIndex = 26;
             // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(15, 134);
+            this.trackBar1.Maximum = 100;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(217, 45);
+            this.trackBar1.TabIndex = 27;
+            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
+            // 
             // FormTransmicion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -339,6 +335,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(12)))), ((int)(((byte)(8)))));
             this.ClientSize = new System.Drawing.Size(275, 580);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.comboBox4);
@@ -355,13 +352,13 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbxResolution);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.bunifuSlider1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTransmicion";
             this.Text = "FormTransmicion";
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,9 +367,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuSlider bunifuSlider1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxResolution;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
@@ -389,5 +385,6 @@
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TrackBar trackBar1;
     }
 }

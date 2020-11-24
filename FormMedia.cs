@@ -16,5 +16,15 @@ namespace DemoInterfaz
         {
             InitializeComponent();
         }
+
+        private void trackBar3_Scroll(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

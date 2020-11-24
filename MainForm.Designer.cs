@@ -40,19 +40,23 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.panelFooter = new System.Windows.Forms.Panel();
-            this.horafecha = new System.Windows.Forms.Timer(this.components);
-            this.lblHora = new System.Windows.Forms.Label();
-            this.lblFecha = new System.Windows.Forms.Label();
             this.lblInfo = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.horafecha = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.AMC = new AxAXISMEDIACONTROLLib.AxAxisMediaControl();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelFooter.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AMC)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -197,22 +201,17 @@
             this.panelFooter.Size = new System.Drawing.Size(602, 19);
             this.panelFooter.TabIndex = 72;
             // 
-            // horafecha
+            // lblInfo
             // 
-            this.horafecha.Enabled = true;
-            this.horafecha.Tick += new System.EventHandler(this.horafecha_Tick);
-            // 
-            // lblHora
-            // 
-            this.lblHora.AutoSize = true;
-            this.lblHora.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblHora.ForeColor = System.Drawing.Color.White;
-            this.lblHora.Location = new System.Drawing.Point(0, 0);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(53, 17);
-            this.lblHora.TabIndex = 73;
-            this.lblHora.Text = "lblHora";
-            this.lblHora.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblInfo.ForeColor = System.Drawing.Color.White;
+            this.lblInfo.Location = new System.Drawing.Point(449, 0);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(153, 17);
+            this.lblInfo.TabIndex = 75;
+            this.lblInfo.Text = "Mariscope Ingeniería ©";
+            this.lblInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblFecha
             // 
@@ -226,17 +225,22 @@
             this.lblFecha.Text = "lblfecha";
             this.lblFecha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblInfo
+            // lblHora
             // 
-            this.lblInfo.AutoSize = true;
-            this.lblInfo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblInfo.ForeColor = System.Drawing.Color.White;
-            this.lblInfo.Location = new System.Drawing.Point(449, 0);
-            this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(153, 17);
-            this.lblInfo.TabIndex = 75;
-            this.lblInfo.Text = "Mariscope Ingeniería ©";
-            this.lblInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblHora.AutoSize = true;
+            this.lblHora.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblHora.ForeColor = System.Drawing.Color.White;
+            this.lblHora.Location = new System.Drawing.Point(0, 0);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(53, 17);
+            this.lblHora.TabIndex = 73;
+            this.lblHora.Text = "lblHora";
+            this.lblHora.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // horafecha
+            // 
+            this.horafecha.Enabled = true;
+            this.horafecha.Tick += new System.EventHandler(this.horafecha_Tick);
             // 
             // panel2
             // 
@@ -250,33 +254,20 @@
             this.panel2.Size = new System.Drawing.Size(572, 83);
             this.panel2.TabIndex = 73;
             // 
-            // button9
+            // button12
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.button9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.ForeColor = System.Drawing.Color.Maroon;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(0, 0);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(144, 83);
-            this.button9.TabIndex = 2;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.button10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.ForeColor = System.Drawing.Color.Maroon;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.Location = new System.Drawing.Point(144, 0);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(144, 83);
-            this.button10.TabIndex = 3;
-            this.button10.UseVisualStyleBackColor = false;
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.button12.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.ForeColor = System.Drawing.Color.Maroon;
+            this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
+            this.button12.Location = new System.Drawing.Point(432, 0);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(144, 83);
+            this.button12.TabIndex = 74;
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button11
             // 
@@ -292,19 +283,52 @@
             this.button11.TabIndex = 4;
             this.button11.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // button10
             // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.button12.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.ForeColor = System.Drawing.Color.Maroon;
-            this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
-            this.button12.Location = new System.Drawing.Point(432, 0);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(144, 83);
-            this.button12.TabIndex = 74;
-            this.button12.UseVisualStyleBackColor = false;
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.button10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.ForeColor = System.Drawing.Color.Maroon;
+            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
+            this.button10.Location = new System.Drawing.Point(144, 0);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(144, 83);
+            this.button10.TabIndex = 3;
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.button9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.ForeColor = System.Drawing.Color.Maroon;
+            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
+            this.button9.Location = new System.Drawing.Point(0, 0);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(144, 83);
+            this.button9.TabIndex = 2;
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.panel3.Controls.Add(this.AMC);
+            this.panel3.Location = new System.Drawing.Point(372, 168);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(584, 337);
+            this.panel3.TabIndex = 74;
+            // 
+            // AMC
+            // 
+            this.AMC.Enabled = true;
+            this.AMC.Location = new System.Drawing.Point(12, 3);
+            this.AMC.Name = "AMC";
+            this.AMC.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("AMC.OcxState")));
+            this.AMC.Size = new System.Drawing.Size(572, 331);
+            this.AMC.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -312,6 +336,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(968, 676);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.button6);
@@ -334,6 +359,8 @@
             this.panelFooter.ResumeLayout(false);
             this.panelFooter.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.AMC)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -358,6 +385,8 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Panel panel3;
+        private AxAXISMEDIACONTROLLib.AxAxisMediaControl AMC;
     }
 }
 

@@ -32,16 +32,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.bunifuSlider1 = new Bunifu.Framework.UI.BunifuSlider();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.bunifuSlider2 = new Bunifu.Framework.UI.BunifuSlider();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.bunifuSlider3 = new Bunifu.Framework.UI.BunifuSlider();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.bunifuSlider4 = new Bunifu.Framework.UI.BunifuSlider();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -54,6 +50,14 @@
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.trackBar3 = new System.Windows.Forms.TrackBar();
+            this.trackBar4 = new System.Windows.Forms.TrackBar();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -86,7 +90,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(215, 97);
+            this.textBox1.Location = new System.Drawing.Point(224, 97);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(35, 20);
             this.textBox1.TabIndex = 32;
@@ -96,29 +100,15 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(10, 68);
+            this.label2.Location = new System.Drawing.Point(12, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 18);
             this.label2.TabIndex = 29;
             this.label2.Text = "Saturacion";
             // 
-            // bunifuSlider1
-            // 
-            this.bunifuSlider1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSlider1.BackgroudColor = System.Drawing.Color.DarkGray;
-            this.bunifuSlider1.BorderRadius = 0;
-            this.bunifuSlider1.IndicatorColor = System.Drawing.Color.Maroon;
-            this.bunifuSlider1.Location = new System.Drawing.Point(13, 97);
-            this.bunifuSlider1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuSlider1.MaximumValue = 100;
-            this.bunifuSlider1.Name = "bunifuSlider1";
-            this.bunifuSlider1.Size = new System.Drawing.Size(184, 30);
-            this.bunifuSlider1.TabIndex = 28;
-            this.bunifuSlider1.Value = 0;
-            // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(215, 165);
+            this.textBox2.Location = new System.Drawing.Point(224, 166);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(35, 20);
             this.textBox2.TabIndex = 50;
@@ -128,29 +118,15 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(10, 136);
+            this.label3.Location = new System.Drawing.Point(12, 145);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 18);
             this.label3.TabIndex = 49;
             this.label3.Text = "Contrast";
             // 
-            // bunifuSlider2
-            // 
-            this.bunifuSlider2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSlider2.BackgroudColor = System.Drawing.Color.DarkGray;
-            this.bunifuSlider2.BorderRadius = 0;
-            this.bunifuSlider2.IndicatorColor = System.Drawing.Color.Maroon;
-            this.bunifuSlider2.Location = new System.Drawing.Point(13, 165);
-            this.bunifuSlider2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuSlider2.MaximumValue = 100;
-            this.bunifuSlider2.Name = "bunifuSlider2";
-            this.bunifuSlider2.Size = new System.Drawing.Size(184, 30);
-            this.bunifuSlider2.TabIndex = 48;
-            this.bunifuSlider2.Value = 0;
-            // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(215, 233);
+            this.textBox3.Location = new System.Drawing.Point(224, 225);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(35, 20);
             this.textBox3.TabIndex = 53;
@@ -166,23 +142,9 @@
             this.label5.TabIndex = 52;
             this.label5.Text = "Brightness";
             // 
-            // bunifuSlider3
-            // 
-            this.bunifuSlider3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSlider3.BackgroudColor = System.Drawing.Color.DarkGray;
-            this.bunifuSlider3.BorderRadius = 0;
-            this.bunifuSlider3.IndicatorColor = System.Drawing.Color.Maroon;
-            this.bunifuSlider3.Location = new System.Drawing.Point(13, 233);
-            this.bunifuSlider3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuSlider3.MaximumValue = 100;
-            this.bunifuSlider3.Name = "bunifuSlider3";
-            this.bunifuSlider3.Size = new System.Drawing.Size(184, 30);
-            this.bunifuSlider3.TabIndex = 51;
-            this.bunifuSlider3.Value = 0;
-            // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(215, 301);
+            this.textBox4.Location = new System.Drawing.Point(224, 293);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(35, 20);
             this.textBox4.TabIndex = 56;
@@ -197,20 +159,6 @@
             this.label6.Size = new System.Drawing.Size(50, 18);
             this.label6.TabIndex = 55;
             this.label6.Text = "Nitidez";
-            // 
-            // bunifuSlider4
-            // 
-            this.bunifuSlider4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSlider4.BackgroudColor = System.Drawing.Color.DarkGray;
-            this.bunifuSlider4.BorderRadius = 0;
-            this.bunifuSlider4.IndicatorColor = System.Drawing.Color.Maroon;
-            this.bunifuSlider4.Location = new System.Drawing.Point(13, 301);
-            this.bunifuSlider4.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuSlider4.MaximumValue = 100;
-            this.bunifuSlider4.Name = "bunifuSlider4";
-            this.bunifuSlider4.Size = new System.Drawing.Size(184, 30);
-            this.bunifuSlider4.TabIndex = 54;
-            this.bunifuSlider4.Value = 0;
             // 
             // comboBox2
             // 
@@ -347,6 +295,7 @@
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(71, 21);
             this.comboBox4.TabIndex = 66;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // label14
             // 
@@ -375,6 +324,44 @@
             this.comboBox5.Size = new System.Drawing.Size(71, 21);
             this.comboBox5.TabIndex = 68;
             // 
+            // trackBar1
+            // 
+            this.trackBar1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.trackBar1.Location = new System.Drawing.Point(15, 97);
+            this.trackBar1.Maximum = 100;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(203, 45);
+            this.trackBar1.TabIndex = 70;
+            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.Location = new System.Drawing.Point(15, 166);
+            this.trackBar2.Maximum = 100;
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(203, 45);
+            this.trackBar2.TabIndex = 71;
+            this.trackBar2.TickStyle = System.Windows.Forms.TickStyle.None;
+            // 
+            // trackBar3
+            // 
+            this.trackBar3.Location = new System.Drawing.Point(15, 225);
+            this.trackBar3.Maximum = 100;
+            this.trackBar3.Name = "trackBar3";
+            this.trackBar3.Size = new System.Drawing.Size(203, 45);
+            this.trackBar3.TabIndex = 72;
+            this.trackBar3.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trackBar3.Scroll += new System.EventHandler(this.trackBar3_Scroll);
+            // 
+            // trackBar4
+            // 
+            this.trackBar4.Location = new System.Drawing.Point(15, 293);
+            this.trackBar4.Maximum = 100;
+            this.trackBar4.Name = "trackBar4";
+            this.trackBar4.Size = new System.Drawing.Size(203, 45);
+            this.trackBar4.TabIndex = 73;
+            this.trackBar4.TickStyle = System.Windows.Forms.TickStyle.None;
+            // 
             // FormMedia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -382,6 +369,10 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(12)))), ((int)(((byte)(8)))));
             this.ClientSize = new System.Drawing.Size(275, 670);
+            this.Controls.Add(this.trackBar4);
+            this.Controls.Add(this.trackBar3);
+            this.Controls.Add(this.trackBar2);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.comboBox5);
             this.Controls.Add(this.label13);
@@ -396,21 +387,21 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.bunifuSlider4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.bunifuSlider3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.bunifuSlider2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.bunifuSlider1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMedia";
             this.Text = "FormMedia";
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -422,16 +413,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuSlider bunifuSlider1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuSlider bunifuSlider2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
-        private Bunifu.Framework.UI.BunifuSlider bunifuSlider3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label6;
-        private Bunifu.Framework.UI.BunifuSlider bunifuSlider4;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -444,5 +431,9 @@
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar trackBar2;
+        private System.Windows.Forms.TrackBar trackBar3;
+        private System.Windows.Forms.TrackBar trackBar4;
     }
 }
