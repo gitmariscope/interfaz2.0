@@ -17,9 +17,27 @@ namespace DemoInterfaz
             InitializeComponent();
         }
 
+        
+
         private void label10_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FormIp_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ipAddressControl1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MainForm.ipserver.ip = ipAddressControl1.Text;
+                   
         }
     }
 }

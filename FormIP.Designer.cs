@@ -107,6 +107,7 @@
             this.button1.TabIndex = 33;
             this.button1.Text = "Test";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ipAddressControl1
             // 
@@ -122,6 +123,7 @@
             this.ipAddressControl1.Size = new System.Drawing.Size(141, 20);
             this.ipAddressControl1.TabIndex = 34;
             this.ipAddressControl1.Text = "...";
+            this.ipAddressControl1.Click += new System.EventHandler(this.ipAddressControl1_Click);
             // 
             // ipAddressControl2
             // 
@@ -171,6 +173,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormIp";
             this.Text = "FormIp";
+            this.Load += new System.EventHandler(this.FormIp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,8 +187,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
-        private IPAddressControlLib.IPAddressControl ipAddressControl1;
-        private IPAddressControlLib.IPAddressControl ipAddressControl2;
-        private IPAddressControlLib.IPAddressControl ipAddressControl3;
+        public IPAddressControlLib.IPAddressControl ipAddressControl1;
+        public IPAddressControlLib.IPAddressControl ipAddressControl2;
+        public IPAddressControlLib.IPAddressControl ipAddressControl3;
     }
 }

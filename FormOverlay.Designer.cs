@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtOverlay = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -46,12 +46,12 @@
             this.label1.Text = "Setting Overlay";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox1
+            // txtOverlay
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 89);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(235, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtOverlay.Location = new System.Drawing.Point(12, 89);
+            this.txtOverlay.Name = "txtOverlay";
+            this.txtOverlay.Size = new System.Drawing.Size(235, 20);
+            this.txtOverlay.TabIndex = 2;
             // 
             // FormOverlay
             // 
@@ -59,7 +59,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(12)))), ((int)(((byte)(8)))));
             this.ClientSize = new System.Drawing.Size(259, 631);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtOverlay);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormOverlay";
@@ -72,6 +72,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox txtOverlay;
     }
 }

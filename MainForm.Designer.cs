@@ -49,14 +49,14 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.AMC = new AxAXISMEDIACONTROLLib.AxAxisMediaControl();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelFooter.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AMC)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -311,6 +311,15 @@
             this.button9.TabIndex = 2;
             this.button9.UseVisualStyleBackColor = false;
             // 
+            // AMC
+            // 
+            this.AMC.Enabled = true;
+            this.AMC.Location = new System.Drawing.Point(12, 3);
+            this.AMC.Name = "AMC";
+            this.AMC.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("AMC.OcxState")));
+            this.AMC.Size = new System.Drawing.Size(572, 331);
+            this.AMC.TabIndex = 0;
+            // 
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -320,15 +329,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(584, 337);
             this.panel3.TabIndex = 74;
-            // 
-            // AMC
-            // 
-            this.AMC.Enabled = true;
-            this.AMC.Location = new System.Drawing.Point(12, 3);
-            this.AMC.Name = "AMC";
-            this.AMC.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("AMC.OcxState")));
-            this.AMC.Size = new System.Drawing.Size(572, 331);
-            this.AMC.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -345,13 +345,13 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Mariscope";
+            this.Text = "Mariscope Ingeniería";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
@@ -359,8 +359,8 @@
             this.panelFooter.ResumeLayout(false);
             this.panelFooter.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AMC)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -385,8 +385,8 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Panel panel3;
         private AxAXISMEDIACONTROLLib.AxAxisMediaControl AMC;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

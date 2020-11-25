@@ -17,16 +17,22 @@ namespace DemoInterfaz
         {
             InitializeComponent();
 
-            string ip_server = "http://192.168.2.252";
+            string http = "http://";
+            string ip_server = ipserver.ip.ToString(); ;
             string user = "root";
             string password = "admin";
 
+            
             string url = "/axis-cgi/mjpg/video.cgi";
-            string urlDef = ip_server + url;
+            string urlDef = http + ip_server + url;
 
             AMC.MediaURL = urlDef;
             AMC.MediaType = "MJPEG";
             AMC.Play();
+        }
+        public static class ipserver 
+        {
+            public static string ip;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -80,7 +86,7 @@ namespace DemoInterfaz
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            
+ 
         }
 
         private void button12_Click(object sender, EventArgs e)
