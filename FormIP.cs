@@ -36,7 +36,7 @@ namespace DemoInterfaz
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MainForm.ipserver.ip = ipAddressControl1.Text;
+            
                    
         }
     }

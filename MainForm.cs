@@ -18,7 +18,7 @@ namespace DemoInterfaz
             InitializeComponent();
 
             string http = "http://";
-            string ip_server = ipserver.ip.ToString(); ;
+            string ip_server = "192.168.2.252";
             string user = "root";
             string password = "admin";
 
@@ -30,10 +30,7 @@ namespace DemoInterfaz
             AMC.MediaType = "MJPEG";
             AMC.Play();
         }
-        public static class ipserver 
-        {
-            public static string ip;
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
